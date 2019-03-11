@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:orientation="vertical"
+    tools:context=".AdminUsuarioActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/Regoperacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OPERACION"
+            android:gravity="center"
+            android:textStyle="normal|bold"
+            android:textSize="25sp"
+            android:layout_margin="20dp" />
+
+        <TextView
+            android:id="@+id/tv_ced"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CEDULA"
+            android:textStyle="normal|bold"
+            android:textSize="18sp"
+            android:layout_margin="10dp" />
+
+        <EditText
+            android:id="@+id/txt_ced"
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:background="@color/colorAccent"
+            android:ems="10"
+            android:hint="Ingrese cedula"
+            android:layout_height="40dp" />
+        <TextView
+            android:id="@+id/lbl_nombres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NOMBRES"
+            android:textStyle="normal|bold"
+            android:textSize="18sp"
+            android:layout_margin="10dp" />
+        <EditText
+            android:id="@+id/txt_nombres"
+            android:layout_width="match_parent"
+            android:inputType="textPersonName"
+            android:layout_height="wrap_content"
+            android:textStyle="normal|bold"
+            android:textSize="18sp"
+            android:layout_margin="10dp"
+            android:hint="ingrese nombre"/>
+        <TextView
+            android:id="@+id/lbl_apellidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="APELLIDOS"
+            android:textStyle="normal|bold"
+            android:textSize="18sp"
+            android:layout_margin="10dp" />
+        <EditText
+            android:id="@+id/text_apellidos"
+            android:hint="ingrese apellidos"
+            android:inputType="textPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal|bold"
+            android:textSize="18sp"
+            android:layout_margin="10dp" />
+        <TextView
+            android:id="@+id/lbl_edad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EDAD"
+            android:textStyle="normal|bold"
+            android:textSize="18sp"
+            android:layout_margin="10dp"/>
+        <EditText
+            android:id="@+id/txt_edad"
+            android:hint="ingrese edad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal|bold"
+            android:textSize="18sp"
+            android:layout_margin="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/Guardar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@android:drawable/ic_menu_save"
+                android:text="Guardar"/>
+            <Button
+                android:id="@+id/Cancelar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@android:drawable/ic_menu_close_clear_cancel"
+                android:text="Eliminar"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>
